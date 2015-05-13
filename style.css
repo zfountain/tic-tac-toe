@@ -1,0 +1,93 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	background-color: #D7F2F1;
+	font-size: 1.5em;
+}
+button {
+	cursor: pointer;
+	font-size: .25em;
+	margin: 1%;
+	margin-top: 2.5%;
+}
+button:active {
+	background-color: #ED8702;
+	box-shadow: 1px 1px 1px 0px;
+	position: relative;
+	bottom: 8%;
+	left: 1%;
+}
+footer {
+	background-color: #F2E4AA;
+	padding: 7%;
+}
+
+header {
+	background-color: #F2E4AA;
+	padding: 0.25%;
+}
+h1 {
+	font-size: 3em;
+	margin: 1%;
+}
+input {
+	display: inline;
+	font-size: .25em;
+}
+
+p {
+	color: #FF9900;
+	font-size: 0.5em;
+}
+#game {
+	padding:2%;
+	font-size: 2em;
+}
+#game-info {
+	background-color: #99C2CC;
+	padding-bottom: 11%;
+	padding-top: 2%;
+}
+#modal-name, #modal-winner {
+	background-color: #99C2CC;
+	box-shadow: 5px 5px 5px 0px #3299BB;
+	font-size: 5em;
+	height: 60%;
+	opacity: 0.98;
+	padding-top: 8%;
+	position: absolute;
+	bottom: 20%;
+	right: 15%;
+	width: 75%;
+}
+#player1, #player2, #start, button {
+	background-color: #F1EFE6;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px 0px;
+}
+#start {
+	margin-top: 2.5%;
+	cursor: pointer;
+}
+#start:active {
+  box-shadow: 1px 1px 1px 0px;
+  float: left;
+  position: relative;
+  top: 2px;
+  right: -2px;
+}
+.column.four:hover, #player1:hover, #player2:hover, #start:hover {
+	background-color: #ED8702;
+}
+.column.four {
+	background-color: #F2E4AA;
+	float: left;
+	margin: 1.5%;
+	width: 28%;
+	padding-bottom: 1.5%;
+	padding-top: 1.5%;
+}
+.row {
+	background-color: #D7F2F1;
+	clear: both;
+}

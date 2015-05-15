@@ -19,7 +19,8 @@ button:active {
 }
 footer {
 	background-color: #F2E4AA;
-	height: 15%;
+	height: 10%;
+	padding-top: 1.5%;
 }
 
 header {
@@ -63,13 +64,24 @@ p {
 	right: 15%;
 	width: 75%;
 }
-#player1, #player2, #start, button {
+#player1, #player2, #reset, #start, button {
 	background-color: #F1EFE6;
 	border-radius: 5px;
 	box-shadow: 3px 3px 3px 0px;
 }
+#reset {
+	margin-left: 42%;
+	width: 15%;
+}
+/*#reset:active {
+	box-shadow: 1px 1px 1px 0px;
+	float: left;
+	position: relative;
+	top: 2%;
+}*/
+
 #start, #reset {
-	margin-top: 2.5%;
+	margin-top: 0.5%;
 	cursor: pointer;
 }
 #start:active {
@@ -79,7 +91,7 @@ p {
   top: 2px;
   right: -2px;
 }
-.column-four:hover, #player1:hover, #player2:hover, #start:hover {
+.column-four:hover, #player1:hover, #player2:hover, #reset:hover, #start:hover {
 	background-color: #ED8702;
 }
 .column-four {

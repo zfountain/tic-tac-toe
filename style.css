@@ -52,7 +52,7 @@ p {
 	padding-bottom: 11%;
 	padding-top: 2%;
 }
-#modal-name, #modal-winner {
+#modal-name, #modal-winner-o, #modal-winner-x {
 	background-color: #99C2CC;
 	box-shadow: 5px 5px 5px 0px #3299BB;
 	font-size: 5em;
@@ -106,6 +106,9 @@ p {
 	padding-top: 4.5%;
 	padding-left: 5%;
 	padding-right: 5%;
+}
+.hidden {
+	display: none;
 }
 .row {
 	background-color: #D7F2F1;

@@ -43,17 +43,9 @@ checkBoard = function() {
 	i = $("#i").text();
 };
 
-// Play continues until one player wins by getting (a,b,c), (d,e,f), (g,h,i), (a,d,g), (b,e,h), (c,f,i), (a,e,i) or (c,e,g) OR until the game is tied with all 9 spots on the board filled.
+// Play continues until one player wins by getting (a,b,c), (d,e,f), (g,h,i), (a,d,g), (b,e,h), (c,f,i), (a,e,i) or (c,e,g).
 
-var clickCount = 0;
-	function onClick() {
-	clickCount += 1;
-	document.getElementsByClassName("column-four").innerHTML = clickCount;
-};
- 
-
-
-findWinner = function() {
+ findWinner = function() {
 // Check to see if X won
 	if ((a === "X" && b === "X" && c === "X") || (d === "X" && e === "X" && f === "X") || (g === "X" && h === "X" && i === "X") || (a === "X" && d === "X" && g === "X") || (b === "X" && e === "X" && h === "X") || (c === "X" && f === "X" && i === "X") || (a === "X" && e === "X" && i === "X") || (c === "X" && e === "X" && g === "X")) {
 // Return winner X
@@ -65,8 +57,19 @@ findWinner = function() {
 	}
 }
 
+// Count clicks on the board. If there isn't a winner and all 9 spots on the board are filled, declare a draw.
+
+var clickCount = 0;
+
+function onClick() {
+	clickCount += 1;
+	document.getElementsByClassName("column-four").innerHTML = clickCount;
+	if ((clickCount == 9 && findWinner !== "X") && (clickCount == 9 && findWinner !== "O")) {
+		alert("It's a draw!");
+	}
+};
+
 // Function will clear the board.
-// TO DO: Add functionality to reset column color
 var resetBoard = $("#reset").click(function(event) {
 	a = $("#a").text("").css("background-color", "#F2E4AA");
 	b = $("#b").text("").css("background-color", "#F2E4AA");

@@ -19,12 +19,13 @@ button:active {
 }
 footer {
 	background-color: #F2E4AA;
-	padding: 7%;
+	height: 15%;
 }
 
 header {
 	background-color: #F2E4AA;
 	padding: 0.25%;
+	margin: 1%;
 }
 h1 {
 	font-size: 3em;
@@ -40,8 +41,10 @@ p {
 	font-size: 0.5em;
 }
 #game {
-	padding:2%;
 	font-size: 2em;
+	margin: 1%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
 }
 #game-info {
 	background-color: #99C2CC;
@@ -65,7 +68,7 @@ p {
 	border-radius: 5px;
 	box-shadow: 3px 3px 3px 0px;
 }
-#start {
+#start, #reset {
 	margin-top: 2.5%;
 	cursor: pointer;
 }
@@ -82,11 +85,15 @@ p {
 .column-four {
 	background-color: #F2E4AA;
 	float: left;
-	height: 12%;
-	margin: 1.5%;
-	width: 28%;
+	position: relative;
+	left: 18%;
+	height: 10%;
+	margin: 0.5%;
+	width: 10%;
 	padding-bottom: 1.5%;
 	padding-top: 4.5%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 .row {
 	background-color: #D7F2F1;

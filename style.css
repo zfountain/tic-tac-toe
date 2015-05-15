@@ -76,16 +76,17 @@ p {
   top: 2px;
   right: -2px;
 }
-.column.four:hover, #player1:hover, #player2:hover, #start:hover {
+.column-four:hover, #player1:hover, #player2:hover, #start:hover {
 	background-color: #ED8702;
 }
-.column.four {
+.column-four {
 	background-color: #F2E4AA;
 	float: left;
+	height: 12%;
 	margin: 1.5%;
 	width: 28%;
 	padding-bottom: 1.5%;
-	padding-top: 1.5%;
+	padding-top: 4.5%;
 }
 .row {
 	background-color: #D7F2F1;

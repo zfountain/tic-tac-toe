@@ -1,5 +1,5 @@
 // Player clicks a div/spot on the board.
-// Function determines whether player is X or O and writes the text to the selected/clicked div.
+// Function determines whether player is X or O and writes the text to the selected/clicked div
 var currentPlayer = "X"
 
 $(".column-four").click(function() {

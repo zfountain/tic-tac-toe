@@ -11,7 +11,4 @@ When downloading the files, maintain the existing folder structure to assure .cs
 
 To play this game, the user must have JavaScript enabled in the web browser.
 
-##Unsolved Problems
-I have a current issue with scope (I think) within JS/jQuery. If X wins with a full board, the "It's a draw!" alert displays after the "X wins!" alert.
-
 [Play the game!](http://zachfountain.com/tic-tac-toe/)
